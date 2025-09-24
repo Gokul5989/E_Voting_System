@@ -1,0 +1,148 @@
+
+    .hero {
+      background: linear-gradient(to right, #0d6efd, #6610f2);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .btn-glow {
+      box-shadow: 0 0 10px rgba(255,255,255,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .btn-glow:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255,255,255,0.7);
+    }
+
+    .about-section {
+      padding: 60px 20px;
+    }
+
+    footer {
+      background-color:#0d6efd;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    } 
+    .carousel-inner{
+        width: 100%;
+        height: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .carousel-inner img {
+      height: 600px;
+      object-fit: cover;
+    }
+
+    #autoSlider{
+        width: 100%;
+    }
+       .history-section {
+      padding: 60px 20px;
+    }
+
+    .history-img {
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .faq-section h2 {
+  color: #003366;
+  font-weight: 700;
+}
+
+.accordion-button {
+  background-color: #e9f0ff;
+  font-weight: 600;
+  color: #003366;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  background: url("/static/bg.jpg") no-repeat center center fixed;
+  background-size: normal;
+}
+
+.bg-overlay {
+   /* black transparent layer */
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  height: 100vh;
+}
+.security-section h2 {
+  color: white;
+  font-weight: bold;
+}
+
+.security-section img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+.security-section .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.security-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.security-section .card h5 {
+  font-weight: 600;
+  color: #0d6efd;
+}
+#p{
+  color: white;
+}
+#autoSlider{
+  padding-top: 0px;
+}
+
+
+.election-section h3 {
+  color: #003366;
+  font-weight: bold;
+  text-align: left;
+}
+.election-section li {
+  color: #000000;
+}
+
+.election-section .list-group-item {
+  background: transparent;
+  border: none;
+  padding-left: 0;
+  font-size: 16px;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  padding-left: 0.75rem;
+  font-size: 16px;
+  text-align: left;
+}

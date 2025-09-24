@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Voting System</title>
+  <link rel="stylesheet" href="/static/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🗳️ E-Voting System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#roles">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to the Digital Voting Platform</h1>
+      <p class="lead mt-3">Secure. Transparent. Efficient.</p>
+      <a href="#about" class="btn btn-light btn-lg btn-glow mt-4">Get Started</a>
+    </div>
+  </section>
+  <div class="bg-overlay">
+
+    <div id="autoSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+      <!-- Slides -->
+      <div class="carousel-inner rounded shadow">
+        <div class="carousel-item active">
+          <img src="static/1.jpeg" class="d-block w-100" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="static/img4.png" class="d-block w-100" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="static/img3.jpg" class="d-block w-100" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+          <img src="static/5.png" class="d-block w-100" alt="Image 4">
+        </div>
+        <div class="carousel-item">
+          <img src="static/2.png" class="d-block w-100" alt="Image 5">
+        </div>
+        <div class="carousel-item">
+          <img src="static/3.png" class="d-block w-100" alt="Image 6">
+        </div>
+        <div class="carousel-item">
+          <img src="static/4.png" class="d-block w-100" alt="Image 7">
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- About -->
+    <section id="about" class="about-section  text-center">
+      <div class="container">
+        <h2 class="mb-4">About E-Voting</h2>
+        <p class="lead">This system allows eligible users to cast their votes securely online. Built with Django,
+          Bootstrap, and modern web technologies, our platform ensures integrity and transparency of elections.</p>
+      </div>
+    </section>
+
+    <!-- Election History -->
+    <section id="history" class="history-section">
+      <div class="container">
+        <h2 class="section-title">Evolution of Election Systems</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+              <img src="static/paper.png" class="card-img-top history-img" alt="Paper Ballot">
+              <div class="card-body">
+                <h5 class="card-title">Paper Ballots</h5>
+                <p class="card-text">Traditional paper-based voting system used widely until the late 20th century.
+                  Though reliable, it involved time-consuming counting and was prone to fraud.</p>
+                  <a href="https://en.wikipedia.org/wiki/Ballot">More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+              <img src="static/evm.jpg" class="card-img-top history-img" alt="EVM">
+              <div class="card-body">
+                <h5 class="card-title">Electronic Voting Machines (EVMs)</h5>
+                <p class="card-text">Introduced in India in the 1990s, EVMs replaced paper ballots and made the process
+                  quicker, reducing counting time and human error.</p>
+                  <a href="https://en.wikipedia.org/wiki/Electronic_voting_in_India">More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+              <img src="static/Online.jpg" class="card-img-top history-img" alt="Online Voting">
+              <div class="card-body">
+                <h5 class="card-title">Online E-Voting</h5>
+                <p class="card-text">With the rise of the internet, modern systems now offer secure, remote, and
+                  accessible voting. Our platform is a part of this digital revolution.</p>
+                  <a href="https://en.wikipedia.org/wiki/Electronic_voting">More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Role-based Actions -->
+    <section id="roles" class="text-center py-5">
+      <div class="container">
+        <h2 class="mb-4">Choose Your Role</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <img src="static/User.png" class="card-img-top roles" alt="Public User">
+                <h4 class="card-title">Public User</h4>
+                <p class="card-text">Register to vote, view candidate promises, and stay informed.</p>
+                <a href="/register/public" class="btn btn-primary w-100">Register as Public</a>
+                <a href="/accounts/login" class="btn btn-outline-secondary mt-2 w-100">Login</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <img src="static/politician.png" class="card-img-top roles" alt="Public User" style="padding-top: 20%;">
+                <h4 class="card-title">Politician</h4>
+                <p class="card-text">Register to upload promises and participate in the election.</p>
+                <a href="/register/politician" class="btn btn-success w-100">Register as Politician</a>
+                <a href="/accounts/login" class="btn btn-outline-secondary mt-2 w-100">Login</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <img src="static/admin.png" class="card-img-top roles" alt="Public User">
+                <h4 class="card-title">Admin</h4>
+                <p class="card-text">Manage users, control voting process, and publish results.</p>
+                <a href="/accounts/login/" class="btn btn-danger w-100">Admin Login</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Security Features Section -->
+    <section id="security" class="security-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">🔐 Platform Security Highlights</h2>
+        <div id="p">
+          <p class="text-center mb-5">We prioritize security to ensure every vote is safe, confidential, and verifiable.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 text-center p-3">
+              <img src="/static/encryption.jpg" alt="Encryption" class="mb-3" style="height: 200px;">
+              <h5>End-to-End Encryption</h5>
+              <p class="text-muted">All data, including votes and credentials, are encrypted in transit and at rest.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 text-center p-3">
+              <img src="/static/vote.jpeg" alt="One User One Vote" class="mb-3" style="height: 200px;">
+              <h5>One User, One Vote</h5>
+              <p class="text-muted">Strict validation ensures each voter can only vote once per election cycle.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 text-center p-3">
+              <img src="/static/server.jpeg" alt="Secure Server" class="mb-3" style="height: 200px;">
+              <h5>Secure Servers</h5>
+              <p class="text-muted">Votes are stored securely in isolated environments protected by firewalls and access
+                control.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 text-center p-3">
+              <img src="/static/audit.jpeg" alt="Audit Logs" class="mb-3" style="height: 200px;">
+              <h5>Audit & Transparency</h5>
+              <p class="text-muted">All vote-related actions are logged and can be reviewed by authorized election
+                officials.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="election-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <!-- Left Side: Indian States Map -->
+          <div class="col-md-6 text-center mb-4 mb-md-0">
+            <img src="/static/india_states_map.gif" alt="Indian States Map" class="img-fluid rounded shadow">
+          </div>
+
+          <!-- Right Side: Election Rules -->
+          <!-- Right: Rules Container -->
+          <div class="col-md-6">
+            <div class="p-4 bg-white shadow rounded border">
+              <h3 class="text-primary mb-3">🗳️ Election Rules (India)</h3>
+              <ul class="list-group list-group-flush fs-6">
+                <li class="list-group-item">✅ You must be 18 years or older to vote.</li>
+                <li class="list-group-item">✅ You must be a registered voter in your constituency.</li>
+                <li class="list-group-item">✅ A valid Voter ID or government-issued photo ID is mandatory.</li>
+                <li class="list-group-item">✅ Voting must be done confidentially in the polling booth.</li>
+                <li class="list-group-item">✅ Each voter is allowed to vote only once per election.</li>
+                <li class="list-group-item">✅ Bribery, intimidation, or offering gifts to influence votes is illegal.
+                </li>
+                <li class="list-group-item">✅ Use of force or threat to prevent a person from voting is punishable.</li>
+                <li class="list-group-item">✅ Electronic Voting Machines (EVMs) are used for accurate vote counting.
+                </li>
+                <li class="list-group-item">✅ It is an offense to impersonate another person to vote.</li>
+                <li class="list-group-item">✅ Political campaigning is not allowed within 100 meters of polling
+                  stations.</li>
+                <li class="list-group-item">✅ Voting hours are strictly followed; late entries are not allowed.</li>
+                <li class="list-group-item">✅ Mobile phones and cameras are not allowed inside voting booths.</li>
+                <li class="list-group-item">✅ You can verify your name in the voter list before the election day.</li>
+                <li class="list-group-item">✅ Assistance is available for senior citizens and people with disabilities.
+                </li>
+                <li class="list-group-item">✅ Voter education and awareness programs are conducted by the Election
+                  Commission to ensure informed voting.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Voting Guidelines / FAQ Section -->
+    <section id="faq" class="faq-section  py-5">
+      <div class="container">
+        <h2 class="text-center mb-4" style="color: white;">🗂️ Voting Guidelines & FAQs</h2>
+        <div class="accordion" id="votingFAQ">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Who is eligible to vote?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#votingFAQ">
+              <div class="accordion-body">
+                Any registered user who is at least 18 years old and approved by the Admin can vote once during the
+                active election period.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo">
+                How do I register for voting?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#votingFAQ">
+              <div class="accordion-body">
+                Go to the "Choose Your Role" section, click "Register as Public" or "Register as Politician", fill in
+                your details, and wait for admin approval.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree">
+                Can I vote more than once?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#votingFAQ">
+              <div class="accordion-body">
+                No. The system strictly allows one vote per user. Once submitted, you cannot change or vote again.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour">
+                Is the voting process secure?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#votingFAQ">
+              <div class="accordion-body">
+                Yes. Our platform uses encrypted communication and secure databases to ensure anonymity and integrity.
+                Votes cannot be tampered with.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive">
+                I forgot my login credentials. What should I do?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#votingFAQ">
+              <div class="accordion-body">
+                Use the “Forgot Password” option on the login page or contact the admin through the contact section to
+                recover your account.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 E-Voting System. All rights reserved.</p>
+      </div>
+      <!-- Social Sharing Section -->
+      <section class="text-center py-4">
+        <h5>Share This Platform</h5>
+        <div class="d-flex justify-content-center gap-3 mt-2">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourdomain.com" target="_blank"
+            class="btn btn-primary">
+            <i class="bi bi-facebook"></i> Facebook
+          </a>
+          <a href="https://twitter.com/intent/tweet?text=Vote%20online%20securely%20with%20E-Voting%20System!&url=https://yourdomain.com"
+            target="_blank" class="btn btn-info text-white">
+            <i class="bi bi-twitter"></i> Twitter/X
+          </a>
+          <a href="https://api.whatsapp.com/send?text=Try%20this%20secure%20E-Voting%20system:%20https://yourdomain.com"
+            target="_blank" class="btn btn-success">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </section>
+
+    </footer>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Lottie Script -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>
