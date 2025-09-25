@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-gipndkd-75c@%uuy8&yh#g8tdh_7c0xq!zdp=1f^0%#e)h6v-*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['e-voting-system-2-j4tk.onrender.com']
 
 
 # Application definition
