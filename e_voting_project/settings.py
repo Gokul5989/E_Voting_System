@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['voting-system-zhpr.onrender.com']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
